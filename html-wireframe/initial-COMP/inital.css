@@ -1,0 +1,60 @@
+/******* ALL ********/
+
+* {
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 700px;
+    width: 500px;
+    border: 2px solid red;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 500px;
+    margin: 20px;
+    border: 2px solid green;
+}
+
+.bookmarks {
+    border: 2px solid blue;
+    height: 190vh;
+    width: 500px;
+}
+
+.control {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookmark-buttons {
+    width: 50%;
+    margin: 5px;
+    padding: 10px;
+}
+
+.bmark-listing {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid orange;
+    margin: 5px; 
+    padding: 10px 10px; 
+    text-align: left;  
+}
+
+

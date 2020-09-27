@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
+body {
+  background-image: url(https://image.freepik.com/free-vector/cartoon-sharks-pattern-seamless-ocean-swim-marine-shark-sea-underwater-background_102902-1776.jpg);
+  background-color: whitesmoke;
+  font-family: 'Special Elite', cursive;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100vh;
+  width: 90%;
+  padding: 10px;
+  margin-left: 10px;
+  box-shadow: 0px 0px 20px 3px black; 
+}
+
+button:hover {
+  background-color: #0066FF;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: gray;
+  width: 100%;
+  color: white;
+  height: 55px;
+  margin-bottom: 25px;
+}
+
+.header-container button, .header-container select {
+  margin-top: 8px;
+}
+
+.header-title {
+  height: 27px;
+  margin-top: 15px;
+}
+
+.bookmark-buttons {
+  height: 40px;
+  width: 50px;
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background: #0563af;
+  color: #fff;
+  box-shadow: rgba(0,0,0,.5);
+}
+
+.header:before {
+  font-family: 'Font Awesome 5 Free';
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: #007ce0;
+}
+
+.header:hover:before {
+  background: #0472ca;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.control-buttons > button {
+  width: 100px;
+  height: 50px;
+  margin-right: 10px;
+  box-shadow: 0px 0px 10px 0px black;
+  border: none;
+  outline: none;
+  color: whitesmoke;
+  background-color: #0033FF;
+}
+
+.control-buttons button:hover {
+  background-color: whitesmoke;
+  transition: 0.3s;
+  cursor: pointer;
+  color: black;
+}
+
+.control-buttons > button > a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.control-buttons a:hover {
+  color: black;
+}
+
+.bmark-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #66CCFF;
+  box-shadow: 0px 5px 20px 3px black; 
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bmark-listing {
+  display: flex;
+  justify-content: space-between;
+}
+
+#title-dis, .listing-rating{
+  font-size: 20px;
+  color: black;
+  margin: 15px;
+}
+
+
+.hidden {
+  display: none;
+}
+
+#form-add-bookmark {
+  display: flex;
+  flex-direction: column;
+}
+
+#info-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+#finish-buttons {
+  display: grid;
+  place-items: center;
+}
+
+.inputs {
+  margin: 20px;
+}
+
+#rating-buttons {
+  display: flex;
+  justify-content: center;
+  margin-right: 35px;
+}
+
+.bmark-entry {
+  display: flex;
+}
+
+#desc {
+  height: 80px;
+  resize: none;
+}
+
+#finish-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.create {
+  height: 40px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 10px 0px black;
+  color: whitesmoke;
+  background-color: #0033FF;
+}
+
+.create:hover {
+  background-color: whitesmoke;
+  transition: 0.3s;
+  cursor: pointer;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  place-items: center;
+}
+
+ul label {
+  background-color: whitesmoke;
+  padding: 10px 20px;
+  font-size: 16px;
+  box-shadow: 0px 0px 10px 0px black;
+}
+
+ul label:hover {
+  background-color: navy;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+li {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+ul input[type='radio'] {
+  opacity: 0;
+}
+
+ul input[type='radio']:checked + label,
+.focus-visible + label,
+.focus-visible {
+  background-color: #099FF0;
+}
+
+.error-container {
+  display: grid;
+  place-items: center;
+}
+
+.error-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: red;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 50%;
+}
+
+.error-content button {
+  border: none;
+  padding: 5px;
+}
+
+
+@media all and (min-width: 580px) {
+  main {
+    margin-left: 14.5%;
+    width: 70%;
+  }
+
+  .inputs {
+    margin-bottom: 50px;
+    height: 50px;
+    font-size: 25px;
+  }
+
+  #info-inputs {
+    margin-bottom: 100px;
+  }
+
+  #form-add-bookmark button {
+    height: 70px;
+    width: 150px;
+  }
+
+  #rating-buttons  {
+    height: 200px;
+  }
+
+}
+
+/* selectors - INITIAL PAGE */
+/* 
+.container
+.header
+.control
+.bookmark-buttons
+.bookmarks
+.bmark-listing
+.listing-rating
+
+#new-bookmark 
+
+h2
+h3
+select
+option
+
+
+
+
+
+
+
+
+*/
